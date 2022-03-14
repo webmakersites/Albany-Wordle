@@ -1,0 +1,183 @@
+body {
+	background-color: #121213;
+	font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+	color: #d7dadc;
+	overscroll-behavior: contain; // Disables pull-down refresh
+	touch-action: manipulation; // Disables double-tap zoom
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+h1 {
+	color: inherit;
+}
+@media only screen and (max-width: 1080px) {
+	.hg-theme-default {
+		max-width: 90vw;
+		margin: 20px;
+		font-family: inherit;
+		font-size: 2rem;
+		background-color: transparent;
+	}
+	.hg-theme-default .hg-button,
+	.hg-theme-default .hg-button.hg-activeButton {
+		max-width: 80%;
+		padding: 60px 0px;
+		margin: 5px;
+		background-color: #818384;
+		color: inherit;
+		border-radius: 10px;
+	}
+	input[disabled] {
+		width: 15vw;
+		height: 15vw;
+		font-size: 6rem;
+	}
+	input[type=button] {
+		font-size: 2rem;
+	}
+	h1 {
+		font-size: 3rem;
+	}
+	p {
+		max-width: 75vw;
+		text-align:left;
+		font-size: 30px;
+	}
+	#loading {
+		font-size: 2rem;
+	}
+	.toggle {
+		width: 60px;
+		height: 30px;
+		border-radius: 50px;
+		margin-top: 20px;
+	}
+	.toggle .switch {
+		position: relative;
+		width: 30px;
+		height: 30px;
+		border-radius: 100%;
+		background-color: #000000;
+		left: -13px;
+	}
+	.toggle .switch i {
+		margin-top: 7px;
+		text-align: center;
+		color: white;
+	}
+	.box.submitted {
+		color: white;
+	}
+}
+@media only screen and (min-width: 1080px) {
+	h1 {
+		font-size: 2vw;
+	}
+	p, #loading, #restart {
+		font-size: 1.5vw;
+	}
+	.hg-theme-default {
+		max-width: 40vw;
+		margin: 20px;
+		font-family: inherit;
+		background-color: transparent;
+		font-size: 1.5vw;
+	}
+	.hg-theme-default .hg-button,
+	.hg-theme-default .hg-button.hg-activeButton {
+		max-width: auto;
+		padding: 2vw 0px;
+		background-color: #818384;
+		color: inherit;
+	}
+	input[disabled] {
+		width: 5vw;
+		height: 5vw;
+		font-size: 2vw;
+	}
+	p {
+		max-width: 25vw;
+		text-align:left;
+		color: inherit;
+	}
+	.toggle {
+		width: 4vw;
+		height: 1.7vw;
+		border-radius: 10vw;
+		margin-top: 20px;
+	}
+	.toggle .switch {
+		position: relative;
+		width: 1.7vw;
+		height: 1.7vw;
+		border-radius: 100%;
+		background-color: #000000;
+		font-size: 1vw;
+	}
+	.toggle .switch i {
+		margin-top: 0.4vw;
+		text-align: center;
+		color: white;
+	}
+	.box.submitted {
+		color: white;
+	}
+}
+#restart {
+	margin: 20px;
+}
+input[disabled] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: inherit;
+	margin: 2px;
+	padding:  10px;
+	border: 2px solid #3a3a3c;
+	text-align: center;
+	font-weight: bold;
+	color: inherit;
+}
+input[type=button] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	/* https://stackoverflow.com/questions/25704650/disable-blue-highlight-when-touch-press-object-with-cursorpointer */
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+	font-family: inherit;
+	border: 3px solid #3a3a3c;
+	padding: 10px 20px;
+	background-color: transparent;
+	color: inherit;
+	cursor: pointer;
+}
+/*
+.toggle {
+	width: 60px;
+	height: 30px;
+	background-color: #ffffff;
+	border: 2px solid #ffffff;
+	border-radius: 50px;
+	margin-top: 20px;
+}
+.toggle .switch {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	background-color: #000000;
+	left: -13px;
+}
+.toggle .switch i {
+	margin-top: 7px;
+	text-align: center;
+	color: white;
+}
+*/
+.box.submitted {
+	color: white;
+}

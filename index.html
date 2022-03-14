@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Lancedle</title>
+		<!-- https://stackoverflow.com/questions/11689353/disable-pinch-zoom-on-mobile-web -->
+		<meta name="viewport" content="maximum-scale=1.0, user-scalable=no" />
+		<link rel="shortcut icon" type="image/png" href="src/favicon.png"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css">
+		<link rel="stylesheet" href="src/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- jQuery and jQuery cookie -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<script src="src/theme.js"></script>
+	</head>
+
+	<body>
+		<center>
+			<div class="toggle dark" onclick="theme(); return false;">
+				<div class="switch"><i class="fa fa-moon-o" id="icon"></i></div>
+			</div>
+			<input type="hidden" id="token" />
+			<input type="hidden" id="word" /><br />
+			<div id="boxes"></div>
+			<div class="simple-keyboard"></div>
+			<div id="loading" hidden><i class="fa fa-refresh fa-spin"></i></div>
+			<div id="msg" hidden></div>
+			<div id="definition" hidden></div>
+			<input type="button" id="restart" value="Play Again" href="#" onclick="location.reload(); return false;" hidden />
+		</center>
+
+		<!-- simple keyboard -->
+		<script src="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/index.js"></script>
+		<script src="src/script.js"></script>
+	</body>
+</html>
