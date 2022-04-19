@@ -1,4 +1,4 @@
-# Custom Wordle
+# Albany Wordle - 
 
 ## Description
 Like the millions of other daily players, I really enjoyed playing Wordle. I only wished I could play it more than once a day (like when on the train going to work)! So I decided to make a similar version of the game for myself without the one word per day restriction which I have hosted on http://cpaa.servicomp.net.au/wordle (since 29 Jan 2022... mere days before the announcement the New York Times had purchased Wordle). One other custom feature I added was to provide the definition of the chosen word using [Free Dictionary API](https://dictionaryapi.dev) in case I did not already know the meaning of the word.
